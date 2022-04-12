@@ -1,0 +1,7 @@
+<script>
+  let fullUrl = window.location.href;
+  let rmv = window.location.protocol + "//" + window.location.hostname + "/";
+  let to = fullUrl.replace(rmv, "");
+  localStorage.setItem("to", to);
+  window.location.replace(rmv);
+</script>
